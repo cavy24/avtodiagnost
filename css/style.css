@@ -1,0 +1,1157 @@
+@import url(normalize.css);
+@font-face {
+    font-family: 'Roboto-Regular';
+    font-weight: normal;
+    font-style: normal;
+    src: url("fonts/robotocondensed-regular-webfont.woff2") format("woff2"), url("fonts/robotocondensed-regular-webfont.woff") format("woff"), url("fonts/RobotoCondensed-Regular.ttf") format("tiff"), url("fonts/robotocondensed-regular-webfont.eot") format("eot");
+    src: url("fonts/RobotoCondensed-Regular.eot?#iefix") format("embedded-opentype");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    background-color: #9D9D9D;
+    min-width: 1600px;
+}
+
+body {
+    background: url("../img/stockvault-car-headlight123912.jpg") no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.colorover {
+    
+    width: 100%;
+    height: 100%;
+    background: rgba(15, 187, 133, 0.65);
+}
+
+a[href*='#'] {
+    text-decoration: none;
+}
+
+.header {
+    min-width: 1600px;
+}
+
+.grid,
+.grid_sections {
+    width: 1600px;
+    margin: 0 auto;
+}
+
+.grid {
+    border: 5px inset #6ad648;
+    border-radius: 15px;
+}
+
+.namecompany {
+    display: inline-block;
+    padding-top: 20px;
+    padding-left: 20px;
+    font-family: Arial;
+    color: #8eea00c9;
+    font-size: 70px;
+    font-weight: 900;
+    line-height: 60px;
+    -webkit-transform: scaleY(1.1633);
+    transform: scaleY(1.1633);
+    text-shadow: 1px 2px 3px #292926;
+}
+
+@-webkit-keyframes namestep {
+    from {
+        color: #ffdb4d;
+    }
+    to {
+        color: #00eabe;
+    }
+}
+
+@keyframes namestep {
+    from {
+        color: #ffdb4d;
+    }
+    to {
+        color: #00eabe;
+    }
+}
+
+.namecompany {
+    -webkit-animation: namestep 1s steps(5) 3;
+    animation: namestep 1s steps(5) 3;
+    -webkit-transition: color 1s ease-out;
+    transition: color 1s ease-out;
+}
+
+.namecompany:hover {
+    color: #ffdb4d;
+}
+
+.nav {
+    display: inline-block;
+    width: 450px;
+    float: right;
+    padding-top: 50px;
+}
+
+.main_menu {
+    display: inline-block;
+}
+
+.main_menu li {
+    display: inline-block;
+    list-style-type: none;
+    text-align: center;
+    padding-left: 10px;
+}
+
+.main_menu a {
+    width: 130px;
+    height: 50px;
+    line-height: 50px;
+    display: block;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 22px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    -webkit-transition: outline .75s ease-in, color .5s ease-in;
+    transition: outline .75s ease-in, color .5s ease-in;
+}
+
+.main_menu a:hover {
+    outline: 2px dashed #74c7d5;
+    color: #73f713;
+}
+
+.menu_ourservices a {
+    -webkit-transition: outline .75s ease-in, color .5s ease-in;
+    transition: outline .75s ease-in, color .5s ease-in;
+}
+
+.menu_ourservices a:hover {
+    outline: 2px dashed #c55058;
+    color: #FF2C00;
+}
+
+.clr {
+    clear: both;
+}
+
+.div_descriptioncompany {
+    width: 950px;
+    margin: 80px auto 0;
+    padding-bottom: 100px;
+}
+
+.descriptioncompany {
+    width: 950px;
+    font-family: Arial;
+    color: #FFEB3B;
+    font-size: 45px;
+    font-weight: 600;
+    text-align: left;
+    text-shadow: 1px 2px 3px #292926;
+    -webkit-transition: color .35s ease-in;
+    transition: color .35s ease-in;
+}
+
+.descriptioncompany:hover {
+    color: #e1e457; 
+}
+
+.ourservices {
+    margin: 10px auto;
+    min-width: 1600px;
+}
+
+.grid_ourservices {
+    border: 5px solid #c55058;
+    border-radius: 15px;
+}
+
+.namecompany_ourservices {
+    display: inline-block;
+    padding-top: 20px;
+    padding-left: 20px;
+    font-family: sans-serif;
+    color: #fff;
+    font-size: 40px;
+    line-height: 50px;
+    text-align: center;
+    font-style: italic;
+    text-shadow: -1.5px -1.5px 0 #00ea9d, 1.5px -1.5px 0 #00ea9d;
+    -webkit-transform: scaleY(1.1633);
+    transform: scaleY(1.1633);
+    -webkit-transition: padding-left .25s ease-out, color .25s ease-in, text-shadow .25s ease-in;
+    transition: padding-left .25s ease-out, color .25s ease-in, text-shadow .25s ease-in;
+}
+
+.namecompany_ourservices:hover {
+    padding-left: 25px;
+    color: #00ea9d;
+    text-shadow: 0 0 0;
+}
+
+.div_nameservices {
+    width: 1280px;
+    margin: 100px auto 30px;
+}
+
+.nameservices {
+    width: 1280px;
+    height: 70px;
+    font-family: Arial;
+    color: #FF4900;
+    font-size: 70px;
+    line-height: 74px;
+    text-align: center;
+    -webkit-transition: color .45s ease;
+    transition: color .45s ease;
+    text-shadow: 1px 2px 3px #292926;
+}
+
+.nameservices:hover {
+    color: #FF9640;
+}
+
+.name_ourservices {
+    color: #70dbd1;
+}
+
+.name_contacts {
+    color: #aaf227;
+}
+
+.name_contacts:hover {
+    color: #8acf0c;
+}
+
+.ourservices_whatwecan {
+    font-family: Arial;
+    color: #ff8000;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 58px;
+    text-align: left;
+    -webkit-transition: text-shadow .25s;
+    transition: text-shadow .25s;
+    text-shadow: 1px 1.5px 2.5px #292926
+}
+
+.ourservices_whatwecan:hover {
+    text-shadow: 0.5px 0.85px 0.65px #ffd6ca;
+}
+
+.description_whatwecan {
+    width: 1280px;
+    font-family: Arial;
+    color: #fc0;
+    font-size: 24px;
+    line-height: 24px;
+    text-align: left;
+    -webkit-transition: text-shadow .25s;
+    transition: text-shadow .25s;
+    text-shadow: 1px 1.5px 2.5px #292926
+}
+
+.description_whatwecan:hover {
+    text-shadow: 0.5px 1px #ff7a55;
+}
+
+.articles_ourservices {
+    width: 1280px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
+
+.articles_ourservices .service {
+    display: inline-block;
+    width: 300px;
+    height: 480px;
+    float: left;
+    margin-right: 20px;
+    border: 3.5px solid #c55058;
+    border-radius: 15px;
+}
+
+.articles_ourservices .service:nth-child(4) {
+    margin-right: 0;
+}
+
+.articles_ourservices .service:hover {
+    position: relative;
+    top: 5px;
+}
+
+
+.articles_ourservices .div_out_img_service {
+    margin: 30px auto 0;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #ffffff;
+    background-color: rgba(255, 255, 255, 0);
+    width: 140px;
+    height: 140px;
+    padding: 5px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: background-color .5s ease-out;
+    transition: background-color .5s ease-out;
+}
+
+.articles_ourservices .div_out_img_service:hover {
+    background-color: #F5001D;
+}
+
+.articles_ourservices .div_in_img_service {
+    margin: 0 auto;
+    padding: 22px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #ffffff;
+    width: 120px;
+    height: 120px;
+}
+
+.articles_ourservices img {
+    background-color: #fff;
+    width: 76px;
+    height: 70px;
+    opacity: 1;
+    -webkit-transition: opacity .5s ease-out;
+    transition: opacity .5s ease-out;
+}
+
+.articles_ourservices img:hover {
+    opacity: 0.7;
+}
+
+.articles_ourservices .lightball {
+    width: 46px;
+    height: 70px;
+}
+
+.name_service {
+    margin-top: 29px;
+    font-family: 'Arial';
+    color: #FF6400;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 26px;
+    text-align: center;
+    -webkit-transition: color .5s ease-out;
+    transition: color .5s ease-out;
+    text-shadow: 1px 1px 1.5px #292926
+    }
+
+.name_service:hover {
+    color: #ffa266;
+}
+
+.description_service {
+    margin: 30px 20px;
+    text-shadow: 1px 1px 1.5px #292926
+}
+
+.description_service li {
+    list-style-type: disc;
+    list-style-position: inside;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #FFF673;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    -webkit-transition: color .25s ease;
+    transition: color .25s ease;
+}
+
+.description_service li:hover {
+    color: #FF6400;
+}
+
+.description_service li li {
+    list-style-position: outside;
+}
+
+.description_service .ul_condition {
+    padding-left: 40px;
+}
+
+.weare {
+    margin: 10px auto;
+    min-width: 1600px;
+}
+
+.name_weare {
+    color: #673AB7;
+}
+
+.name_weare:hover {
+    color: #5b158ed9;
+}
+
+.grid_weare {
+    border: 5px inset #A0849D;
+    border-radius: 15px;
+}
+
+.menu_weare a {
+    -webkit-transition: outline .75s ease-in, color .5s ease-in;
+    transition: outline .75s ease-in, color .5s ease-in;
+}
+
+.menu_weare a:hover {
+    outline: 2px dashed #A0849D;
+    color: #bb009c;
+}
+
+.description_weare {
+    padding-top: 20px;
+    color: #d5c8e6;
+    font-weight: bold;
+}
+
+.description_weare:hover {
+    text-shadow: .5px .75px .5px #74c7d5;
+}
+
+.weare_pluses {
+    text-shadow: 1px 1px 1.5px #292926
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+summary {
+    outline: none;
+}
+
+summary:before {
+    background-color: #74c7d5;
+    content: "+";
+    color: #BFA230;
+    float: left;
+    font-size: 32px;
+    font-weight: bold;
+    margin: 0 10px 15px 0;
+    padding: 5px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    text-align: center;
+    width: 32px;
+    height: 32px;
+}
+
+summary:hover:before {
+    background-color: #3baec2;
+    color: #FFFC00;
+}
+
+details[open] summary:before {
+    content: "-";
+    padding-top: 2px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.div_pluses {
+    float: left;
+    margin: 20px 5px;
+    border: 3.5px solid #A0849D;
+    border-radius: 15px;
+}
+
+.pluses {
+    display: block;
+    width: 600px;
+    font-family: Arial;
+    color: #ebebeb;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: left;
+    margin-left: 20px;
+    margin-bottom: 25px;
+    padding-top: 18px;
+    -webkit-transition: text-shadow .25s;
+    transition: text-shadow .25s;
+}
+
+.pluses:hover {
+    text-shadow: 0.5px 0.75px 0.5px #8b92e6;
+}
+
+.pluses > p {
+    margin-left: 42px;
+}
+
+.weare_pluses {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+.contacts {
+    min-width: 1600px;
+    margin: 10px auto;
+}
+
+.grid_contacts {
+    border: 5px inset #82A356;
+    border-radius: 15px;
+}
+
+.menu_contacts a {
+    -webkit-transition: outline .75s ease-in, color .5s ease-in;
+    transition: outline .75s ease-in, color .5s ease-in;
+}
+
+.menu_contacts a:hover {
+    outline: 2px dashed #60D4AE;
+    color: #1DD300;
+}
+
+.description_contacts {
+    color: #8cf187;
+    -webkit-transition: color .25s;
+    transition: color .25s;
+    font-weight: bold;
+}
+
+.description_contacts:hover {
+    color: #bbec90;
+    text-shadow: none;
+}
+
+.contacts_address {
+    display: inline-block;
+    width: 300px;
+    border: 3.5px solid #a1ca6c;
+    float: left;
+    color: #c5dea4;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.name_contacts_address {
+    font-family: Arial;
+    font-size: 50px;
+    font-weight: 300;
+    line-height: 55px;
+    text-align: center;
+    padding-top: 25px;
+    -webkit-transition: color .5s ease;
+    transition: color .5s ease;
+}
+
+.name_contacts_address:hover {
+    color: #87EA00;
+}
+
+.address_contacts_address {
+    font-family: Arial;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 16.8px;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 25px;
+    -webkit-transition: color .5s ease;
+    transition: color .5s ease;
+}
+
+.address_contacts_address:hover {
+    color: #87EA00;
+}
+
+.description_contacts_map {
+    width: 1160px;
+    text-align: center;
+    padding-bottom: 45px;
+    font-family: Arial;
+    font-size: 35px;
+    font-weight: 600;
+    color: #87EA00;
+    -webkit-transition: color .5s ease;
+    transition: color .5s ease;
+}
+
+.description_contacts_map:hover {
+    color: #288600;
+}
+
+.p_contacts_address {
+    line-height: 25px;
+    text-align: center;
+    font-size: 23px;
+    font-weight: 500;
+    padding: 0 15px;
+    -webkit-transition: color .5s ease;
+    transition: color .5s ease;
+}
+
+.p_contacts_address:hover {
+    color: #87EA00;
+}
+
+.contactsandmap {
+    width: 1525px;
+    margin: 40px auto;
+}
+
+.contacts_map {
+    display: inline-block;
+    width: 460px;
+    margin-left: 25px;
+}
+
+.map_medium {
+    width: 450px;
+    opacity: 0.8;
+    -webkit-transition: opacity .5s ease;
+    transition: opacity .5s ease;
+}
+
+.map_medium:hover {
+    opacity: 1;
+    outline: 3px inset #D2F700;
+}
+
+.contacts_photo {
+    width: 700px;
+    height: 450px;
+    margin-top: 85px;
+    background-color: #ccc;
+    background: url(../img/IMG_6812.JPG) no-repeat center;
+    background-size: 700px;
+    float: right;
+    margin-right: 25px;
+    opacity: 0.8;
+    -webkit-transition: opacity .5s ease;
+    transition: opacity .5s ease;
+    text-align: center;
+    font-size: 30px;
+}
+
+.contacts_photo:hover {
+    opacity: 1;
+    outline: 3px inset #D2F700;
+}
+
+#slider {
+    width: 700px;
+    height: 450px;
+    position: relative;
+}
+
+#slider img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+
+#slider img:target {
+    opacity: 1;
+}
+
+#slider img#three {
+    opacity: 1;
+}
+
+#slider img:not(:target),
+#slider img:target ~ img#three {
+    opacity: 0;
+}
+
+#slider ul {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    bottom: 0;
+    left: 0;
+}
+
+#slider ul li {
+    display: inline-block;
+    margin: 0.5em;
+}
+
+#slider ul li a {
+    margin: 0;
+    display: block;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: #ccc;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+#slider ul li a[href="#three"] {
+    background: #D2F700;
+}
+
+#one:target ~ ul li a[href="#one"],
+#two:target ~ ul li a[href="#two"],
+#three:target ~ ul li a[href="#three"] {
+    background: #D2F700;
+}
+
+#one:target ~ ul li a[href="#three"],
+#two:target ~ ul li a[href="#three"] {
+    background: #ccc;
+}
+
+.partner {
+    margin: 0 auto;
+    min-width: 1600px;
+}
+
+.grid_partner {
+    border: 5px inset #75b4aa;
+    border-radius: 15px;
+}
+
+.name_partner {
+    color: #CFF700;
+}
+
+.name_partner:hover {
+    color: #9cba00;
+}
+
+.description_partner {
+    color: #DDFB3F;
+    height: 115px;
+    -webkit-transition: text-shadow .25s ease-out;
+    transition: text-shadow .25s ease-out;
+}
+
+.description_partner:hover {
+    text-shadow: 0.5px 1px 1.5px #d4fa0d;
+}
+
+.description_contacts,
+.description_partner {
+    padding-top: 20px;
+}
+
+.div_partner {
+    margin: 30px auto;
+    width: 1200px;
+}
+
+.partner_about {
+    text-decoration: underline;
+}
+
+.partner img {
+    padding-top: 20px;
+    width: 500px;
+    height: 500px;
+    opacity: .75;
+    -webkit-transition: opacity .25s ease-in;
+    transition: opacity .25s ease-in;
+}
+
+.partner img:hover {
+    opacity: 1;
+}
+
+.brends {
+    margin: 0 auto;
+    padding-bottom: 20px;
+    width: 1000px;
+    height: 120px;
+    background: url("../img/garage_tools.png") no-repeat center, url("../img/licota.png") no-repeat left, url("../img/jtc.png") no-repeat right;
+}
+
+.partner_photo {
+    width: 510px;
+    margin: 0 auto;
+}
+
+.footer {
+   
+    min-width: 1600px;
+    
+}
+
+.div_footer {
+    width: 700px;
+    margin: 0 auto;
+    font-family: Arial;
+    color: #ffffff;
+    text-align: center;
+}
+
+.div_footer a {
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 100px;
+    text-decoration: none;
+}
+
+@media screen and(max-width:851px) {
+    html,
+    body,
+    .header,
+    .ourservices,
+    .weare,
+    .contacts,
+    .partner,
+    .footer {
+        min-width: 850px;
+        margin: 0 auto;
+    }
+    .grid,
+    .grid_sections,
+    .grid_ourservices,
+    .grid_weare,
+    .grid_contacts,
+    .grid_partner {
+        width: 792px;
+        margin: 0 auto;
+    }
+    .div_descriptioncompany,
+    .descriptioncompany,
+    .nameservices,
+    .div_nameservices,
+    .articles_ourservices,
+    .weare_pluses,
+    .contactsandmap,
+    .brends,
+    .div_footer {
+        width: 785px;
+        margin: 0 auto;
+    }
+    .namecompany {
+        padding-top: 0;
+        padding-left: 20px;
+        font-size: 50px;
+        line-height: 52px;
+    }
+    .namecompany_ourservices {
+        font-size: 28px;
+        padding-top: 34px;
+    }
+    .div_descriptioncompany {
+        margin-right: 0;
+        padding: 30px 0 40px;
+    }
+    .descriptioncompany {
+        width: 750px;
+        font-size: 28px;
+        text-align: center;
+    }
+    .nav {
+        width: 385px;
+        padding-top: 40px;
+    }
+    .main_menu a {
+        width: 110px;
+        font-size: 18px;
+    }
+    .nameservices {
+        margin: 15px 0;
+        font-size: 45px;
+    }
+    .description_ourservices {
+        height: 115px;
+    }
+    .articles_ourservices {
+        width: 750px;
+    }
+    .service_eletricandcomputer,
+    .service_conditionandford {
+        display: inline-block;
+        text-align: center;
+        width: 750px;
+        margin: 0 auto;
+    }
+    .service_eletricandcomputer .service,
+    .service_conditionandford .service {
+        float: none;
+        margin: 0 10px;
+    }
+    .service_eletricandcomputer {
+        margin: 0 auto 20px;
+    }
+    .div_nameservices {
+        margin: 30px auto;
+    }
+    .ourservices_whatwecan {
+        line-height: 30px;
+        margin-bottom: 15px;
+        font-size: 20px;
+        line-height: 28px;
+        text-align: center;
+    }
+    .description_whatwecan {
+        width: 700px;
+        margin: 0 auto;
+        height: 95px;
+        font-size: 18px;
+        text-align: center;
+    }
+    .description_ourservices {
+        height: 115px;
+    }
+    .description_weare {
+        height: 110px;
+    }
+    .weare_pluses {
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+    .pluses {
+        margin-left: 20px;
+        width: 515px;
+        font-size: 18px;
+        font-weight: 500;
+    }
+    .div_pluses {
+        float: none;
+        width: 550px;
+        margin: 0 auto;
+    }
+    .div_pluses:first-child {
+        padding-bottom: 0;
+    }
+    .contacts_address {
+        margin-left: 8px;
+    }
+    .name_contacts_address {
+        font-size: 40px;
+        line-height: 44px;
+    }
+    .contactsandmap {
+        margin: 25px auto;
+    }
+    .contacts_map {
+        margin: 0 auto;
+    }
+    .description_contacts {
+        height: 140px;
+    }
+    .description_contacts_map {
+        width: 500px;
+        padding-bottom: 38px;
+        font-size: 30px;
+    }
+    .map_medium {
+        display: inline-block;
+        margin: 0 13px;
+    }
+    .contacts_photo {
+        float: none;
+        margin: 20px auto;
+    }
+    .partner_photo {
+        width: 410px;
+    }
+    .partner img {
+        width: 400px;
+        height: 400px;
+    }
+    .description_partner {
+        height: 135px;
+        font-size: 16px;
+    }
+    .brends {
+        width: 750px;
+    }
+    .footer {
+        background-size: 850px 450px;
+        height: 450px;
+    }
+}
+
+@media screen and(max-width:551px) {
+    #slider {
+        display: none;
+    }
+    html,
+    body,
+    .header,
+    .ourservices,
+    .weare,
+    .contacts,
+    .partner,
+    .footer {
+        min-width: 550px;
+        margin: 0 auto;
+    }
+    .grid,
+    .grid_sections,
+    .grid_ourservices,
+    .grid_weare,
+    .grid_contacts,
+    .grid_partner {
+        width: 500px;
+        margin: 0 auto;
+    }
+    .div_descriptioncompany,
+    .div_descriptioncompany,
+    .descriptioncompany,
+    .nameservices,
+    .div_nameservices,
+    .articles_ourservices,
+    .weare_pluses,
+    .contactsandmap,
+    .brends,
+    .div_footer {
+        width: 490px;
+    }
+    .namecompany {
+        display: block;
+        text-align: center;
+        font-size: 60px;
+        padding: 20px 0 0;
+        margin: 0 auto;
+    }
+    .namecompany_ourservices {
+        display: block;
+        font-size: 25px;
+        padding-left: 0;
+        text-decoration: none;
+    }
+    .div_descriptioncompany {
+        padding-bottom: 0px;
+        margin-top: 0;
+        height: 175px;
+    }
+    .descriptioncompany {
+        display: block;
+        margin: 40px auto 0;
+        font-size: 25px;
+        text-align: center;
+    }
+    .nav {
+        display: block;
+        float: none;
+        margin: 0 auto;
+    }
+    .main_menu a {
+        width: 105px;
+    }
+    .articles_ourservices {
+        padding-bottom: 0;
+    }
+    .nameservices {
+        margin: 40px 0 15px;
+    }
+    .service_eletricandcomputer,
+    .service_conditionandford {
+        display: inline-block;
+        text-align: center;
+        width: 500px;
+        margin: 0 auto;
+    }
+    .service_eletricandcomputer .service,
+    .service_conditionandford .service {
+        float: none;
+        margin: 0 10px 30px;
+    }
+    .service_eletricandcomputer {
+        margin-top: 20px;
+    }
+    .div_nameservices {
+        margin: 0 auto;
+        padding-bottom: 25px;
+    }
+    .ourservices_whatwecan {
+        line-height: 30px;
+        margin-bottom: 15px;
+    }
+    .description_whatwecan {
+        width: 450px;
+        margin: 0 auto;
+        height: 140px;
+    }
+    .weare_pluses {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .pluses {
+        width: 400px;
+        margin-left: 20px;
+    }
+    .div_pluses {
+        float: none;
+        width: 450px;
+        margin: 0 auto;
+    }
+    .div_pluses:first-child {
+        padding-bottom: 0;
+    }
+    .ourservices_whatwecan {
+        width: 480px;
+        text-align: center;
+    }
+    .contacts_photo {
+        width: 470px;
+        height: 350px;
+    }
+    .contacts_map {
+        width: 490px;
+    }
+    .description_contacts {
+        height: 190px;
+        text-align: center;
+    }
+    .contacts_address {
+        float: none;
+        display: block;
+        margin: 0 auto;
+    }
+    .contacts_map {
+        margin-bottom: 20px;
+        height: 535px;
+    }
+    .description_contacts_map {
+        width: 490px;
+        padding: 25px 0;
+        font-size: 25px;
+    }
+    .map_medium {
+        margin: 0 20px;
+    }
+    .partner_photo {
+        width: 410px;
+    }
+    .partner img {
+        width: 400px;
+        height: 400px;
+    }
+    .description_partner {
+        height: 230px;
+    }
+    .brends {
+        height: 205px;
+        margin-right: 0;
+        background: url("../img/garage_tools.png") no-repeat center 1px, url("../img/jtc.png") no-repeat 0 80px, url("../img/licota.png") no-repeat 250px 80px;
+    }
+    .footer {
+        background-size: 550px 300px;
+        height: 300px;
+    }
+}
